@@ -7,9 +7,3 @@
 
 $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
 $conf = $objectManager->get('Magento\Framework\App\Config\ScopeConfigInterface')->getValue('christmas/christmasDecoration/image');
-if(isset($conf)){
-    echo "<img src='http://localhost/magento244/pub/media/conceptive/$conf' />";
-    echo $conf;exit;
-}else{
-    echo "No value";exit;
-}
